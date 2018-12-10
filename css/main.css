@@ -1,4 +1,11 @@
-body {
-    background-image: linear-gradient(blue,pink);
-    height: 2500px
-}
+@import"variables.css";
+@import"body.css";
+@import"navbar.css";
+@import"header.css";
+@import"about.css";
+@import"project.css";
+@import"contact.css";
+@import"footer.css";
+
+
+

@@ -1,0 +1,6 @@
+.jumbotron{
+    background: url("https://images.unsplash.com/photo-1477244075012-5cc28286e465?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=76ae2034864198c0b4daf6117ba25e72&auto=format&fit=crop&w=500&q=60") no-repeat center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
