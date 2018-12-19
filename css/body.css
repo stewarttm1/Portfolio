@@ -1,5 +1,18 @@
 body {
     background-image: linear-gradient(blue, pink);
-    height: 1500px;
     font-family: var(--mainFont);
+}
+
+.portfolio{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.work{
+border-radius: 150px;
+}
+
+#viewMe{
+    text-align: center;
 }

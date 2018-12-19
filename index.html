@@ -11,44 +11,81 @@
 </head>
 <body>
 <!--navbar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav" id="nav-content">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" style="color:white;">Welcome</a>
+ 
+  
+    <ul class="navbar-nav" id = "nav-content">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" >Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Assets/Taylor Stewart Resume 10.18.18.pdf" target=_blank>Resume</a>
+      </li>
+    </ul>
+  </div>
+</nav>
       <!--jumbotron-->
 
       <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <h1 class="display-4">Fluid jumbotron</h1>
-              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+              <h1 class="display-4">Taylor M. Stewart</h1>
+              <p class="lead">Just an ex-sailor who got tired of spending his life under-the-sea, making a fresh start as a Software Developer, and is working one step at a time to get his name out there! </p>
+              <img src="Assets/img/prof 2.JPG" class="circle" width="200" height="300">
             </div>
           </div>
 
           <!--formspree-->
+<a id="about"></a>
+          <section id="about">
+            <div id="blurb">
+            <h3>Been called a "structured free-spirit" more than a few times in my life, so take that as you will. Boundaries don't define the way that I think and the way that I go about my day to day life, but the lines that they help put in place are what help to guide me and encourage me to break past them. Four years in the U.S. Navy as a Electronics Technician Communications Specialist, with quarter of that time being spent underwater protecting the country I love. It's given me a keen attention to detail, and a solid drive to always expand and see what else is on the horizon.</h3>
+            </div>
+            <br>
+            <ul id="quals">
+              <li><h3>Qualifications</h3></li>
+              <li>Javascript</li>
+              <li>Agile</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Microsoft Office</li>
+              <li>Experienced Supervisor</li>
+              <li>Intelligence Operations</li>
+              <li>Security Clearance</li>
 
-          <section id="about"></section>
-   <section id="portfolio"></section>
+            </ul>
+          </section>
+          <br>
+          <br>
+          <br>
+   <a id="projects"></a>
+   <h1 id="viewMe">Click the pictures to check out my work! :-)</h1>
+      <br>
+    <section class="portfolio">
+      <div class="work">
+      <a href="https://codepen.io/stewarttm1/pen/NEmNGJ" target=_blank>
+        <img src="Assets/img/kirby.JPG" class="circle" height="350" width="400"></a>
+      </div>
+      <div class="work">
+          <a href="Assets/api/index.html" target=_blank>
+          <img src="./Assets/img/api.JPG" class="circle"></a>
+        </div>
+      <div class="work">
+        <a href="Assets/Projects/index.html" target=_blank>
+        <img src="Assets/img/tut2.JPG" class="circle"></a>
+      </div>
+
+   </section>
+   <a id="contact"></a>
    <section id="contact">
      <div class="container">
-       <h2 class="text-center text-uppercase">Contact Me</h2>
+       <h2>Contact Me</h2>
        <div class="row">
          <form action="https://formspree.io/taylor.m.stewart22@gmail.com" method="POST">
          <div class="control-group">
@@ -77,6 +114,7 @@
                  required
                  data-validation-required-message="Please enter your email"
                  name="_replyto"
+                 
                >
                <p class="help-block text-danger"></p>
              </div>
@@ -85,7 +123,8 @@
              <div class="form-group">
                <textarea
                  class="form-control"
-                 rows="7"
+                 rows="8"
+                 
                  placeholder="Your Message"
                  id="message"
                  required
@@ -93,7 +132,7 @@
                  name="message"
                ></textarea>
                <p class="help-block text-danger"></p>
-</div>
+            </div>
            </div>
            <div class="text-center">
              <div id="success"></div>
@@ -106,8 +145,18 @@
        </div>
      </div>
    </section>
+  <br>
+  <br>
    <footer>
-
+     <h2>Follow me on any of these if you want to track my life!</h2>
+     <br>
+     <div id="socialLinks">
+      <p><a href="https://www.linkedin.com/in/taylor-stewart-58496b138" target=_blank class="social"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQzOC41MzYgNDM4LjUzNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDM4LjUzNiA0MzguNTM2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQxNC40MSwyNC4xMjNDMzk4LjMzMyw4LjA0MiwzNzguOTYzLDAsMzU2LjMxNSwwSDgyLjIyOEM1OS41OCwwLDQwLjIxLDguMDQyLDI0LjEyNiwyNC4xMjMgICBDOC4wNDUsNDAuMjA3LDAuMDAzLDU5LjU3NiwwLjAwMyw4Mi4yMjV2Mjc0LjA4NGMwLDIyLjY0Nyw4LjA0Miw0Mi4wMTgsMjQuMTIzLDU4LjEwMmMxNi4wODQsMTYuMDg0LDM1LjQ1NCwyNC4xMjYsNTguMTAyLDI0LjEyNiAgIGgyNzQuMDg0YzIyLjY0OCwwLDQyLjAxOC04LjA0Miw1OC4wOTUtMjQuMTI2YzE2LjA4NC0xNi4wODQsMjQuMTI2LTM1LjQ1NCwyNC4xMjYtNTguMTAyVjgyLjIyNSAgIEM0MzguNTMyLDU5LjU3Niw0MzAuNDksNDAuMjA0LDQxNC40MSwyNC4xMjN6IE0xMzMuNjE4LDM2Ny4xNTdINjcuNjY2VjE2OS4wMTZoNjUuOTUyVjM2Ny4xNTd6IE0xMjcuNjI2LDEzMi4zMzIgICBjLTYuODUxLDYuNTY3LTE1Ljg5Myw5Ljg1MS0yNy4xMjQsOS44NTFoLTAuMjg4Yy0xMC44NDgsMC0xOS42NDgtMy4yODQtMjYuNDA3LTkuODUxYy02Ljc2LTYuNTY3LTEwLjEzOC0xNC43MDMtMTAuMTM4LTI0LjQxICAgYzAtOS44OTcsMy40NzYtMTguMDgzLDEwLjQyMS0yNC41NTZjNi45NS02LjQ3MSwxNS45NDItOS43MDgsMjYuOTgtOS43MDhjMTEuMDM5LDAsMTkuODksMy4yMzcsMjYuNTUzLDkuNzA4ICAgYzYuNjYxLDYuNDczLDEwLjA4OCwxNC42NTksMTAuMjc3LDI0LjU1NkMxMzcuODk5LDExNy42MjUsMTM0LjQ3NywxMjUuNzYxLDEyNy42MjYsMTMyLjMzMnogTTM3MC44NzMsMzY3LjE1N2gtNjUuOTUydi0xMDUuOTIgICBjMC0yOS44NzktMTEuMDM2LTQ0LjgyMy0zMy4xMTYtNDQuODIzYy04LjM3NCwwLTE1LjQyLDIuMzMxLTIxLjEyOCw2Ljk5NWMtNS43MTUsNC42NjEtOS45OTYsMTAuMzI0LTEyLjg0NywxNi45OTEgICBjLTEuMzM1LDMuNDIyLTEuOTk5LDguNzUtMS45OTksMTUuOTgxdjExMC43NzVoLTY1Ljk1MmMwLjU3MS0xMTkuNTI5LDAuNTcxLTE4NS41NzksMC0xOTguMTQyaDY1Ljk1MnYyNy45NzQgICBjMTMuODY3LTIxLjY4MSwzMy41NTgtMzIuNTQ0LDU5LjEwMS0zMi41NDRjMjIuODQsMCw0MS4yMSw3LjUyLDU1LjEwNCwyMi41NTRjMTMuODk1LDE1LjAzNywyMC44NDEsMzcuMjE0LDIwLjg0MSw2Ni41MTl2MTEzLjY0ICAgSDM3MC44NzN6IiBmaWxsPSIjMzdkMGRiIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="></a></p>
+    <p><a href="https://www.instagram.com/taylorstewart2/" target=_blank class="social"><img src="Assets/img/instagram-logo.png"></a></p>
+    <p><a href="https://github.com/stewarttm1" target=_blank class="social"><img src="./Assets/img/githhub icon.png"></a></p>
+    <p><a url="https://www.facebook.com/JustStewIt22" target=_blank class="social"><img src="Assets/img/facebook-logo.png"></a></p>
+     </div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" target=_blank title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" target=_blank title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target=_blank title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
    </footer>
 
 

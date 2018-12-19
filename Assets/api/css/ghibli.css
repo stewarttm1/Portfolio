@@ -1,0 +1,49 @@
+.different{
+    background-color: grey;
+    opacity: 0.5;
+}
+
+.jumbotron{
+    background-image: url("../assets/option1.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+    height: 600px;
+   
+}
+
+.wholeThang{
+    background-color: cornflowerblue;
+    font-family: var(--main);
+    
+}
+
+.solo{
+    width: 100%;
+    text-align: center;
+}
+
+.theButton{
+    background-color: whitesmoke;
+    border: solid black 5px;
+    height: 85px;
+    width: 150px;
+    font-size: 40px;
+}
+
+.dataContainer p {
+    text-indent: 1em;
+}
+
+.dataContainer h2 {
+    margin-left: 2em;
+}
+
+.results{
+    margin-left: 15%;
+}
+
+footer{
+    margin-left: 35%;
+}
